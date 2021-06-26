@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		EE7D9F852686CC020071F256 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE7D9F842686CC020071F256 /* main.cpp */; };
+		EE7D9F8D2686E7EB0071F256 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7D9F8C2686E7EB0071F256 /* OpenGL.framework */; };
+		EE7D9F8F2686E7FA0071F256 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7D9F8E2686E7FA0071F256 /* GLUT.framework */; };
+		EE7D9F912686E9AC0071F256 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7D9F902686E9AC0071F256 /* CoreFoundation.framework */; };
+		EE7D9F932686EA500071F256 /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7D9F922686EA500071F256 /* libGLEW.2.2.0.dylib */; };
+		EE7D9F952686EA6C0071F256 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7D9F942686EA6C0071F256 /* libglfw.3.3.dylib */; };
+		EE7D9F992686FC910071F256 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE7D9F982686FC910071F256 /* shader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,15 @@
 /* Begin PBXFileReference section */
 		EE7D9F812686CC020071F256 /* openGL_tutorials */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = openGL_tutorials; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7D9F842686CC020071F256 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EE7D9F8C2686E7EB0071F256 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		EE7D9F8E2686E7FA0071F256 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		EE7D9F902686E9AC0071F256 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		EE7D9F922686EA500071F256 /* libGLEW.2.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.2.0.dylib; path = ../../../../usr/local/Cellar/glew/2.2.0/lib/libGLEW.2.2.0.dylib; sourceTree = "<group>"; };
+		EE7D9F942686EA6C0071F256 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../usr/local/Cellar/glfw/3.3.2/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		EE7D9F962686F8910071F256 /* SimpleVertexShader.vertexshader */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleVertexShader.vertexshader; sourceTree = "<group>"; };
+		EE7D9F972686F9140071F256 /* SimpleFragmentShader.fragmentshader */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleFragmentShader.fragmentshader; sourceTree = "<group>"; };
+		EE7D9F982686FC910071F256 /* shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
+		EE7D9F9A2686FCB50071F256 /* shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +47,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7D9F952686EA6C0071F256 /* libglfw.3.3.dylib in Frameworks */,
+				EE7D9F932686EA500071F256 /* libGLEW.2.2.0.dylib in Frameworks */,
+				EE7D9F912686E9AC0071F256 /* CoreFoundation.framework in Frameworks */,
+				EE7D9F8F2686E7FA0071F256 /* GLUT.framework in Frameworks */,
+				EE7D9F8D2686E7EB0071F256 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +63,7 @@
 			children = (
 				EE7D9F832686CC020071F256 /* openGL_tutorials */,
 				EE7D9F822686CC020071F256 /* Products */,
+				EE7D9F8B2686E7EB0071F256 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +79,24 @@
 			isa = PBXGroup;
 			children = (
 				EE7D9F842686CC020071F256 /* main.cpp */,
+				EE7D9F962686F8910071F256 /* SimpleVertexShader.vertexshader */,
+				EE7D9F972686F9140071F256 /* SimpleFragmentShader.fragmentshader */,
+				EE7D9F982686FC910071F256 /* shader.cpp */,
+				EE7D9F9A2686FCB50071F256 /* shader.h */,
 			);
 			path = openGL_tutorials;
+			sourceTree = "<group>";
+		};
+		EE7D9F8B2686E7EB0071F256 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D9F942686EA6C0071F256 /* libglfw.3.3.dylib */,
+				EE7D9F922686EA500071F256 /* libGLEW.2.2.0.dylib */,
+				EE7D9F902686E9AC0071F256 /* CoreFoundation.framework */,
+				EE7D9F8E2686E7FA0071F256 /* GLUT.framework */,
+				EE7D9F8C2686E7EB0071F256 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7D9F992686FC910071F256 /* shader.cpp in Sources */,
 				EE7D9F852686CC020071F256 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,7 +278,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/glfw/3.3.2/include,
+					/usr/local/Cellar/glew/2.2.0/include,
+					/usr/local/Cellar/glm/0.9.9.8/include,
+					/usr/local/include,
+					/usr/local/include/glad,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/glew/2.2.0/lib,
+					/usr/local/Cellar/glfw/3.3.2/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
 			};
 			name = Debug;
 		};
@@ -248,7 +298,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/glfw/3.3.2/include,
+					/usr/local/Cellar/glew/2.2.0/include,
+					/usr/local/Cellar/glm/0.9.9.8/include,
+					/usr/local/include,
+					/usr/local/include/glad,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/glew/2.2.0/lib,
+					/usr/local/Cellar/glfw/3.3.2/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
 			};
 			name = Release;
 		};
